@@ -6,9 +6,7 @@ import React from "react";
 const RootLayout = () => {
   return (
     <Stack>
-      <Stack.Screen name="(tab)" options={{ headerShown: false }} />
-      {/* <Stack.Screen name="index" /> */}
-      {/* <Stack.Screen name="about" /> */}
+      <Stack.Screen name="(drawer)"  options={{ headerShown: false }} />
     </Stack>
   )
 }

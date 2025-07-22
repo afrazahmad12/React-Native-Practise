@@ -5,7 +5,7 @@ import { View } from "react-native";
 
 const Tabroot = () => {
   return (
-    <Tabs>
+    <Tabs initialRouteName="index" screenOptions={{ headerShown: false }} >
       <Tabs.Screen
         name="index"
         options={{
@@ -16,7 +16,7 @@ const Tabroot = () => {
         }} />
 
       <Tabs.Screen name="about" options={{
-        title: "About Us", tabBarIcon: ({ color, size }) => {
+        title: "About Us222", tabBarIcon: ({ color, size }) => {
           return (
             <View style={{
               width: 60,
