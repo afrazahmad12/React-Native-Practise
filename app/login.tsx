@@ -20,7 +20,7 @@ const Login = () => {
         }}
 
         source={require("@/assets/images/login.jpg")} />
-      <Text>Login to your Account</Text>
+      <Text style={{textAlign:"center"}}>Login to your Account</Text>
 
       <View style={{
         padding: 20,
@@ -40,7 +40,7 @@ const Login = () => {
           height: 50,
           paddingHorizontal: 20
         }} />
-        
+
         <MyButton title={"Sign in"} onPress={onLogin} />
         <TouchableOpacity disabled={true} style={{ flexDirection: 'row', justifyContent: 'center' }}>
           <Text>Don't have an Account?</Text>

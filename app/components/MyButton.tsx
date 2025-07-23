@@ -1,6 +1,6 @@
 import { StyleSheet, Text, TouchableOpacity, } from 'react-native'
 
-const MyButton = ({ title, onPress }) => {
+const MyButton = ({ title, onPress }: any) => {
   return (
 
 

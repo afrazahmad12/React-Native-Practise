@@ -8,10 +8,13 @@ const RootLayout = () => {
     <Stack>
       {/* This line is enable for drawer and bottom tab navigation */}
       {/* <Stack.Screen name="(drawer)"  options={{ headerShown: false }} /> */}
-      <Stack initialRouteName="flexBox" screenOptions={{ headerShown: false }} />
-      <Stack.Screen name="flexBox" />
+      <Stack initialRouteName="login" screenOptions={{ headerShown: false }} />
+     
       <Stack.Screen name="login" />
       <Stack.Screen name="signup" />
+      <Stack.Screen name="flexlayout" />
+       <Stack.Screen name="flexBox" />
+
 
 
 
