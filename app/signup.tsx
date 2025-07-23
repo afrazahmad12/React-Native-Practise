@@ -67,9 +67,6 @@ const Signup = () => {
             login
           </Text>
         </TouchableOpacity>
-
-
-
       </TouchableOpacity>
 
     </View>

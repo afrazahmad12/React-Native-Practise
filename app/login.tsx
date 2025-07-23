@@ -7,7 +7,7 @@ const Login = () => {
   const router = useRouter()
   const onLogin = () => {
     router.navigate("/signup")
-
+    
   }
   return (
     <View style={{ flex: 1 }}>
@@ -40,6 +40,7 @@ const Login = () => {
           height: 50,
           paddingHorizontal: 20
         }} />
+        
         <MyButton title={"Sign in"} onPress={onLogin} />
         <TouchableOpacity disabled={true} style={{ flexDirection: 'row', justifyContent: 'center' }}>
           <Text>Don't have an Account?</Text>
@@ -50,6 +51,10 @@ const Login = () => {
           </TouchableOpacity>
         </TouchableOpacity>
       </View>
+
+       <MyButton title={"flex box"} onPress={() =>{
+        router.navigate("/flexBox")
+       }} />
     </View>
   )
 }
