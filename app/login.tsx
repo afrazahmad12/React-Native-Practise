@@ -55,6 +55,9 @@ const Login = () => {
        <MyButton title={"flex box"} onPress={() =>{
         router.navigate("/flexBox")
        }} />
+       <MyButton title={"layout"} onPress={() =>{
+        router.navigate("/flexlayout")
+       }} />
     </View>
   )
 }
