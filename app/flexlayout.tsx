@@ -1,6 +1,8 @@
 import React from 'react'
 import { StatusBar, StyleSheet, Text, View } from 'react-native'
 
+
+
 const flexlayout = () => {
   const Header = () => {
     return (
@@ -47,7 +49,7 @@ const flexlayout = () => {
   }
   return (
     <View style={styles.container}>
-      {/* <Header />
+      <Header />
       <View style={{ flexDirection: 'row', margin: 10, }} >
         <View style={{ backgroundColor: "red", height: 150, width: '49%', marginRight: '2.5%' }} />
         <View style={{ backgroundColor: "green", height: 150, width: '49%' }} />
@@ -57,7 +59,7 @@ const flexlayout = () => {
         <View style={{ backgroundColor: "green", height: 150, width: '49%', justifyContent: 'center', alignItems: 'center' }} >
           <Text>Hello</Text>
         </View>
-      </View> */}
+      </View>
 
     </View>
   )
@@ -136,3 +138,4 @@ const styles = StyleSheet.create({
 })
 
 export default flexlayout
+

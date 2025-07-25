@@ -7,7 +7,7 @@ const Login = () => {
   const router = useRouter()
   const onLogin = () => {
     router.navigate("/signup")
-    
+
   }
   return (
     <View style={{ flex: 1 }}>
@@ -20,7 +20,7 @@ const Login = () => {
         }}
 
         source={require("@/assets/images/login.jpg")} />
-      <Text style={{textAlign:"center"}}>Login to your Account</Text>
+      <Text style={{ textAlign: "center" }}>Login to your Account</Text>
 
       <View style={{
         padding: 20,
@@ -52,12 +52,17 @@ const Login = () => {
         </TouchableOpacity>
       </View>
 
-       <MyButton title={"flex box"} onPress={() =>{
+      {/* <MyButton title={"flex box"} style={{
+        marginTop: 10, marginLeft: 10, marginRight: 10
+      }} onPress={() => {
         router.navigate("/flexBox")
-       }} />
-       <MyButton title={"layout"} onPress={() =>{
+      }} />
+
+      <MyButton title={"layout"} style={{
+        marginTop: 10, marginLeft: 10, marginRight: 10
+      }} onPress={() => {
         router.navigate("/flexlayout")
-       }} />
+      }} /> */}
     </View>
   )
 }
