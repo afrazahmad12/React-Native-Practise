@@ -1,7 +1,7 @@
 import { useRouter } from 'expo-router'
 import React from 'react'
 import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import MyButton from './components/MyButton'
+import MyButton from '../Components/MyButton'
 
 const Signup = () => {
   const router = useRouter()

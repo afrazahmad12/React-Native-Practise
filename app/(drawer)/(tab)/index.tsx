@@ -1,4 +1,4 @@
-import MyButton from "@/app/components/MyButton";
+import MyButton from "@/app/Components/MyButton";
 import { useNavigation } from "expo-router";
 import React, { useLayoutEffect } from "react";
 import { View } from "react-native";
