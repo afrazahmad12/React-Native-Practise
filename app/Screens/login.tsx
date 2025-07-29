@@ -19,7 +19,7 @@ const Login = () => {
           backgroundColor: "green"
         }}
 
-        source={require("@/assets/images/login.jpg")} />
+        source={require("../assets/images/login.jpg")} />
       <Text style={{ textAlign: "center" }}>Login to your Account</Text>
 
       <View style={{

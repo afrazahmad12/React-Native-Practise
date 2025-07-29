@@ -13,7 +13,7 @@ const App = () => {
         }}>
         <View>
           <Image style={{ height: 50, width: 50 }}
-            source={require('../../assets/images/menu.png')} />
+            source={require('../assets/images/menu.png')} />
            
           <View style={{ marginHorizontal:"45%",marginBlockEnd:10 }}>
              <Icon name="magnifying-glass" size={30} />

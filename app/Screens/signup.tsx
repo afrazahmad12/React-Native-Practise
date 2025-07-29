@@ -18,7 +18,7 @@ const Signup = () => {
           backgroundColor: "green"
         }}
 
-        source={require("@/assets/images/login.jpg")} />
+        source={require("../assets/images/login.jpg")} />
       <View style={{
         padding: 20,
         gap: 20,
