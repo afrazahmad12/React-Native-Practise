@@ -1,7 +1,7 @@
-import { Link, useRouter } from "expo-router";
+import { useRouter } from "expo-router";
 import React from "react";
 import { Image, Text, TextInput, TouchableOpacity, View } from "react-native";
-import MyButton from "../Components/MyButton";
+import MyButton from "./Components/MyButton";
 
 const Login = () => {
   const router = useRouter()
@@ -19,7 +19,7 @@ const Login = () => {
           backgroundColor: "green"
         }}
 
-        source={require("../assets/images/login.jpg")} />
+        source={require("./assets/images/login.jpg")} />
       <Text style={{ textAlign: "center" }}>Login to your Account</Text>
 
       <View style={{
@@ -50,7 +50,7 @@ const Login = () => {
             <Text style={{ color: 'blue' }}>Signup</Text>
           </TouchableOpacity>
         </TouchableOpacity>
-        <Text>Don't have an Account? <Link  href={"/signup"}>Signup</Link></Text>
+        {/* <Text>Don't have an Account? <Link  href={"/signup"}>Signup</Link></Text> */}
       </View>
 
       {/* <MyButton title={"flex box"} style={{

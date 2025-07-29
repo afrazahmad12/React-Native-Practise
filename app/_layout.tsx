@@ -9,7 +9,7 @@ const RootLayout = () => {
     
       
       <Stack.Screen name="foodDelivery" />
-      <Stack.Screen name="login" />
+      <Stack.Screen name="Screens" />
       <Stack.Screen name="flexlayout" />
       <Stack.Screen name="signup" />
       <Stack.Screen name="flexBox" />
