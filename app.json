@@ -4,7 +4,7 @@
     "slug": "practiseReactNative",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./app/assets/images/",
+    "icon": "./assets/images/login.jpg",
     "scheme": "practisereactnative",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,

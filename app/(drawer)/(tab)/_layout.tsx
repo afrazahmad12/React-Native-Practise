@@ -25,9 +25,9 @@ const Tabroot = () => {
   }, [currentTab, navigation]);
 
   return (
-    <Tabs initialRouteName="index" screenOptions={{ headerShown: false }} >
+    <Tabs initialRouteName="home" screenOptions={{ headerShown: false }} >
       <Tabs.Screen
-        name="index"
+        name="home"
         options={{
           title: "Home",
           tabBarIcon: ({ color }) => (

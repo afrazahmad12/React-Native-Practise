@@ -15,6 +15,7 @@ const RootLayout = () => {
       <Stack.Screen name="flexBox" />
       <Stack.Screen name="Flatlist" />
       <Stack.Screen name="index" />
+      <Stack.Screen name="(auth)" />
     </Stack>
   )
 }

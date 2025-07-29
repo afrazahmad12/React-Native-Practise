@@ -1,12 +1,12 @@
 import { useRouter } from 'expo-router'
 import React from 'react'
 import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import MyButton from './Components/MyButton'
+import MyButton from '../app/Components/MyButton'
 
 const Signup = () => {
   const router = useRouter()
   const onRegister = () => {
-    router.navigate("/login")
+    router.navigate("/(auth)/authLogin")
   }
   return (
     <View style={{ flex: 1 }}>
@@ -18,7 +18,7 @@ const Signup = () => {
           backgroundColor: "green"
         }}
 
-        source={require("./assets/images/login.jpg")} />
+        source={require("./../app/assets/images/login.jpg")} />
       <View style={{
         padding: 20,
         gap: 20,
@@ -61,7 +61,7 @@ const Signup = () => {
 
       <TouchableOpacity disabled={true} style={{ flexDirection: 'row', justifyContent: 'center' }}>
         <Text> I have an account!</Text><TouchableOpacity onPress={() => {
-          router.navigate("/login")
+          router.navigate("/../screens/signup")
         }} style={{ marginLeft: 5 }} >
           <Text style={{}}>
             login
