@@ -20,7 +20,6 @@ const Tabroot = () => {
     let title = 'Home';
     if (currentTab === 'settings') title = 'Settings';
     else if (currentTab === 'profile') title = 'Profile';
-    console.log('currentTab', currentTab);
 
     navigation.getParent()?.setOptions({ headerTitle: title });
   }, [currentTab, navigation]);

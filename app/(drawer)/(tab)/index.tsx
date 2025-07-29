@@ -1,6 +1,7 @@
+import MyButton from "@/app/components/MyButton";
 import { useNavigation } from "expo-router";
 import React, { useLayoutEffect } from "react";
-import { Text, TouchableOpacity, View } from "react-native";
+import { View } from "react-native";
 
 const Home = () => {
   const navigation = useNavigation();
@@ -10,14 +11,14 @@ const Home = () => {
     }, [navigation]);
   return (
     <View>
-      <Text>Home222</Text>
-      <TouchableOpacity onPress={() =>{
-        // navigation.navigate("Settings")  
+       <MyButton title={"Login"} style={{marginHorizontal:20,marginTop:20}} onPress={()=>navigation.navigate("login")} />
+      {/* <TouchableOpacity style={{width:100,height:60,backgroundColor:"red"}} onPress={() =>{
+        navigation.navigate("login")  
       }}>
         <Text>
-          Design
+          Login
         </Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
     </View>
   )
 }
