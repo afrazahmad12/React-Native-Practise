@@ -5,9 +5,8 @@ import React from "react";
 
 const RootLayout = () => {
   return (
-    <Stack initialRouteName="design" screenOptions={{ headerShown: false }}>
-      {/* This line is enable for drawer and bottom tab navigation */}
-      {/* <Stack.Screen name="(drawer)"  options={{ headerShown: false }} /> */}
+    <Stack initialRouteName="(drawer)" screenOptions={{ headerShown: false }}>
+    
       
       <Stack.Screen name="foodDelivery" />
       <Stack.Screen name="login" />
@@ -16,7 +15,6 @@ const RootLayout = () => {
       <Stack.Screen name="flexBox" />
       <Stack.Screen name="Flatlist" />
       <Stack.Screen name="index" />
-      <Stack.Screen name="design" />
     </Stack>
   )
 }

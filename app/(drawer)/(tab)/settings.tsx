@@ -1,23 +1,28 @@
 import { Entypo, FontAwesome6, Ionicons, MaterialIcons } from '@expo/vector-icons';
-import React, { useState } from 'react';
+import { useNavigation } from 'expo-router';
+import React, { useLayoutEffect, useState } from 'react';
 import { Switch, Text, View } from 'react-native';
 
-const design = () => {
+const Settings = () => {
+    const navigation = useNavigation();
+  
   const [isEnabled, setIsEnabled] = useState(false);
   const toggleSwitch = () => setIsEnabled(previousState => !previousState);
-
+useLayoutEffect(() => {
+    navigation.getParent()?.setOptions({ headerTitle: "Settings" });
+  }, [navigation]);
   return (
-    <View>
-      <View style={{
+    <View style={{
+      marginHorizontal: "2%"
+    }}>
+      {/* <View style={{
         alignItems: "center",
- 
+
       }}>
         <Text style={{
-          fontSize: 25,
-         
-
+          fontSize: 25
         }}>Settings</Text>
-      </View>
+      </View> */}
 
       {/* {basic} */}
 
@@ -32,15 +37,16 @@ const design = () => {
         style={{
           flexDirection: 'row',
           alignItems: 'center',
-         
-          
+
+
+
         }}>
-        <Ionicons 
+        <Ionicons
           name="notifications-outline"
           size={24}
           color="black"
           style={{
-            marginRight: 12
+            marginRight: "3%"
           }} />
         <View>
           <Text style={{
@@ -114,11 +120,17 @@ const design = () => {
             color: 'black'
           }}>Show Profile in global search result</Text>
         </View>
-        <View style={{ flex: 1, alignItems: "flex-end" }}>
+        <View style={{
+          flex: 1,
+
+          alignItems: "flex-end"
+        }}>
           <Switch
-            trackColor={{ false: '#767577', true: '#25D366' }}
-            thumbColor={isEnabled ? '#25D366' : '#f4f3f4'}
-            ios_backgroundColor="#3e3e3e"
+            trackColor={{ false: '#8f8f8f', true: '#25D366' }}
+
+            thumbColor={isEnabled ? 'white' : '#fff'}
+
+            ios_backgroundColor='#25D366'
             onValueChange={toggleSwitch}
             value={isEnabled}
           />
@@ -128,7 +140,7 @@ const design = () => {
         style={{
           flexDirection: 'row',
           alignItems: 'center',
-          marginTop:"2%"
+          marginTop: "2%"
         }}>
         <Entypo
           name="block"
@@ -149,7 +161,7 @@ const design = () => {
           }}>People you've Blocked</Text>
         </View>
       </View>
-      
+
       <Text style={{
         marginBottom: 10,
         color: 'light grey',
@@ -205,7 +217,7 @@ const design = () => {
             color: 'black'
           }}>Content and Community Rules</Text>
         </View>
-       
+
       </View>
 
       <View style={{
@@ -231,16 +243,13 @@ const design = () => {
             color: 'black'
           }}>Need help or have a Question? Tell us</Text>
         </View>
-       
+
       </View>
-      
-      
-       
+      <View>
 
-
-
+      </View>
     </View>
   );
 };
 
-export default design;
+export default Settings;
