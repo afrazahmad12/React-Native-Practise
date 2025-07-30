@@ -1,7 +1,7 @@
+import Button from "@/components/Button";
 import { router } from "expo-router";
 import React from "react";
 import { Image, Text, TextInput, TouchableOpacity, View } from "react-native";
-import MyButton from "../app/Components/MyButton";
 
 const Login = () => {
   const onLogin = () => {
@@ -40,30 +40,20 @@ const Login = () => {
           paddingHorizontal: 20
         }} />
 
-        <MyButton title={"Sign in"} onPress={onLogin} />
+        <Button onPress={() => {
+          onLogin()
+        }}>Login</Button>
         <TouchableOpacity disabled={true} style={{ flexDirection: 'row', justifyContent: 'center' }}>
           <Text>Don't have an Account?</Text>
           <TouchableOpacity onPress={() => {
-            // router.navigate('/signup')
-              router.push('/(auth)/authSingup');
+            router.push('/(auth)/authSingup');
           }} style={{ marginLeft: 5 }}>
             <Text style={{ color: 'blue' }}>Signup</Text>
           </TouchableOpacity>
         </TouchableOpacity>
-        {/* <Text>Don't have an Account? <Link  href={"/signup"}>Signup</Link></Text> */}
       </View>
 
-      {/* <MyButton title={"flex box"} style={{
-        marginTop: 10, marginLeft: 10, marginRight: 10
-      }} onPress={() => {
-        router.navigate("/flexBox")
-      }} />
 
-      <MyButton title={"layout"} style={{
-        marginTop: 10, marginLeft: 10, marginRight: 10
-      }} onPress={() => {
-        router.navigate("/flexlayout")
-      }} /> */}
     </View>
   )
 }

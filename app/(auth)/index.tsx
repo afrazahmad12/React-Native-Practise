@@ -7,7 +7,8 @@ export default function AuthIndex() {
   const isAuthenticated = useAuthStore((s) => s.isAuthenticated);
 
   useEffect(() => {
-    router.replace(isAuthenticated ? '/' : '/(auth)/login');
+    router.replace(isAuthenticated ? '/' : '/auth/login');
+
   }, [isAuthenticated]);
 
   return null;

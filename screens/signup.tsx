@@ -1,7 +1,7 @@
+import Button from '@/components/Button'
 import { useRouter } from 'expo-router'
 import React from 'react'
 import { Image, Text, TextInput, TouchableOpacity, View } from 'react-native'
-import MyButton from '../app/Components/MyButton'
 
 const Signup = () => {
   const router = useRouter()
@@ -57,8 +57,9 @@ const Signup = () => {
 
       </View>
 
-      <MyButton title={"Register"} onPress={onRegister} />
-
+      <Button onPress={() => {
+        onRegister()
+      }}>Login</Button>
       <TouchableOpacity disabled={true} style={{ flexDirection: 'row', justifyContent: 'center' }}>
         <Text> I have an account!</Text><TouchableOpacity onPress={() => {
           router.navigate("/(auth)/authLogin")
