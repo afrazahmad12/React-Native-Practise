@@ -13,7 +13,9 @@ const RootLayout = () => {
       <Stack.Screen name="Flatlist" />
       <Stack.Screen name="home" />
       <Stack.Screen name="(auth)" />
-   
+      <Stack.Screen name="loginForm" />
+      <Stack.Screen name="singnupForm" />
+
     </Stack>
   )
 }

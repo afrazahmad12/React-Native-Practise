@@ -13,7 +13,7 @@ const Home = () => {
       <MyButton title={"Login"} style={{ marginHorizontal: 20, marginTop: 20 }} onPress={() => {
         // navigation.navigate("login")
         // router.push('/login'); // ✅ still works
-        router.push('/(auth)/authLogin');
+        router.push('/(auth)/login');
 
 
         }} />
