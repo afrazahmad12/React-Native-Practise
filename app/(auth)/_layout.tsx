@@ -8,7 +8,8 @@ const Authlayout = () => {
     <Stack initialRouteName="authLogin" screenOptions={{ headerShown: false }}>
   
       <Stack.Screen name="authLogin" />
-      <Stack.Screen name="Singup" />
+      <Stack.Screen name="signup" />
+      <Stack.Screen name="login" />
     </Stack>
   )
 }

@@ -61,7 +61,7 @@ const Signup = () => {
 
       <TouchableOpacity disabled={true} style={{ flexDirection: 'row', justifyContent: 'center' }}>
         <Text> I have an account!</Text><TouchableOpacity onPress={() => {
-          router.navigate("/../screens/signup")
+          router.navigate("/(auth)/authLogin")
         }} style={{ marginLeft: 5 }} >
           <Text style={{}}>
             login
